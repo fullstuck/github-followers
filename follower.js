@@ -20,17 +20,19 @@ const showDetail = (data) => {
             url: data[i].url
         });
 
-        $("#output").append(`
-        <div class="card">
-            <img class="card-img-top" src="${arr[i].avatar_url}" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">${arr[i].login}</p>
-                <a href="${arr[i].url}" class="btn btn-primary btn-block">Go to profile</a>
-            </div>
-        </div>
-        `)
+        $("#output").append(template(arr, i))
     };
 };
+
+const template = (follower, index) => {
+    return `<div class="card">
+                <img class="card-img-top" src="${follower[index].avatar_url}" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">${follower[index].login}</p>
+                    <a href="${follower[index].url}" class="btn btn-primary btn-block">Go to profile</a>
+                </div>
+            </div>`
+}
 
 getDetail();
