@@ -20,7 +20,7 @@ const showDetail = (data) => {
 };
 
 const template = (follower, index) => {
-    return `<div class="card" style="width: 20rem;">
+    return `<div class="card">
                 <img class="card-img-top" src="${follower[index].avatar_url}" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
