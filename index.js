@@ -13,19 +13,14 @@ const getDetail = () => {
 }
 
 const showDetail = (data) => {
-    for (i = 0; i < data.length; i++) {
-        arr.push({
-            avatar_url: data[i].avatar_url,
-            login: data[i].login,
-            url: data[i].url
-        });
-
-        $("#output").append(template(arr, i))
-    };
+    const detail = data;
+    detail.map((details, index) => {
+        $("#output").append(template(detail, index))
+    });
 };
 
 const template = (follower, index) => {
-    return `<div class="card">
+    return `<div class="card" style="width: 20rem;">
                 <img class="card-img-top" src="${follower[index].avatar_url}" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
