@@ -1,0 +1,24 @@
+{
+  "name": "github-followers",
+  "version": "1.0.0",
+  "description": "Learn how to get Github followers data using Github API",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alifraher/github-followers.git"
+  },
+  "keywords": [
+    "API",
+    "Github-followers",
+    "javascript"
+  ],
+  "author": "M Alif Raher",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alifraher/github-followers/issues"
+  },
+  "homepage": "https://github.com/alifraher/github-followers#readme"
+}
