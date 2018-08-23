@@ -18,7 +18,7 @@ const template = (follower) => {
                 <img class="card-img-top" src="${follower.avatar_url}" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">${follower.login}</h5>
-                    <a href="${follower.url}" class="btn btn-primary btn-block">Go to profile</a>
+                    <a href="${follower.html_url}" class="btn btn-primary btn-block">Go to profile</a>
                 </div>
             </div>`
 }
